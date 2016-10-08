@@ -11,6 +11,7 @@
 
 #import "RCTBundleURLProvider.h"
 #import "RCTRootView.h"
+#import <Smooch/Smooch.h>
 
 @implementation AppDelegate
 
@@ -31,6 +32,9 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  // Initialize Smooch - these instructions are also available on [app.smooch.io](https://app.smooch.io)
+  [Smooch initWithSettings:
+   [SKTSettings settingsWithAppToken:@"buyfepbz4gbr2bc3m2uz8jatt"]];
   return YES;
 }
 

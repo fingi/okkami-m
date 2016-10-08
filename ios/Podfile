@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'smooch' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for smooch
+  pod 'react-native-smooch',
+   :path => '../node_modules/react-native-smooch'
+  
+  pod 'React', :subspecs => [
+   'Core',
+   'RCTImage',
+   'RCTNetwork',
+   'RCTPushNotification',
+   'RCTText',
+   
+  ], :path => '../node_modules/react-native'
+  #target 'smoochTests' do
+  #  inherit! :search_paths
+  #  # Pods for testing
+  #end
+
+end
+

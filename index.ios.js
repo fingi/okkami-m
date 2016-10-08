@@ -14,6 +14,8 @@ import {
 
 class smooch extends Component {
   render() {
+    var Smooch = require('react-native-smooch');
+    Smooch.show();
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>

@@ -17,9 +17,10 @@ class Splash extends Component {
 
     constructor(props) {
         super(props);
-        setTimeout(() => {
-            Smooch.show();
-        }, 3500);
+        Smooch.show();
+        // setTimeout(() => {
+        //     Smooch.show();
+        // }, 3500);
     }
 
     render() {

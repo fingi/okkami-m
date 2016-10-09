@@ -25,8 +25,15 @@
                                                       moduleName:@"smooch"
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
-  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-
+  rootView.backgroundColor = [[UIColor alloc] initWithRed:0.93f green:0.13f blue:0.18f alpha:1.0f];
+//  UIImage *image = [UIImage imageNamed:@"splash.png"];
+//  if (image) {
+//    UIImageView *launchView = [[UIImageView alloc] initWithImage: image];
+//    launchView.contentMode = UIViewContentModeScaleAspectFit;
+//    launchView.image = image;
+//    rootView.loadingView = launchView;
+//  }
+  
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;

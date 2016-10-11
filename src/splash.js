@@ -18,13 +18,10 @@ class Splash extends Component {
     constructor(props) {
         super(props);
         Smooch.show();
-        // setTimeout(() => {
-        //     Smooch.show();
-        // }, 3500);
     }
 
     render() {
-        let icon = <Text> Talk! </Text>;
+        let icon = <Image source={require('../images/concierge.png')} style={styles.conciergeIcon}></Image>;
         return (
             <View style={styles.imageContainer}>
                 <Image source={require('../images/splash.png')} style={styles.image}>
@@ -47,6 +44,12 @@ const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
     imageContainer: {},
+    conciergeIcon: {
+        width: 35,
+        height: 35,
+        marginRight:2,
+        marginBottom:5
+    },
     image: {
         width: windowWidth,
         height: windowHeight
